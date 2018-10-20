@@ -1,0 +1,7 @@
+python.org -> Download
+diff bt python and r
+dir(__builtins__)
+List 3 functions
+help(tuple)
+import math -> math.sqrt(2.3)
+Lists
