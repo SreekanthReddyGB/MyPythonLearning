@@ -7,29 +7,31 @@ import math -> math.sqrt(2.3)
 
 
 Builtins:
-1. DataTypes: bool, chr, int, float, complex, str, tuple, list, dict, ### bytes, id, object,  bytearray ###
+1. DataTypes: bool, int, float, complex, str, tuple, list, dict, ### bytes, id, object,  bytearray ###
 
 2. DataTypes Values: False, True, None, hex, oct
 
-3. DataType Def: vars, type
+3. DataType Def: vars, type, chr, ord 
 
-4. Math and Numbers: abs, max, min, sum, round, pow, range
+4. Math and Numbers: abs, round, pow, range
 
-5. List: all, enumerate, filter, next, sorted
+5. List: all, any, enumerate, zip, filter, next, sorted, max, min, sum, len
 
-6. String: ascii, len, reversed, slice
+6. String: ascii, len, reversed, slice, repr
 
 7. File: open, 
 
 8. Class: super, staticmethod, classmethod, getattr, setattr, delattr, isinstance, issubclass, frozenset, hasattr
 
-9. User communication: input, print
+9 Input and Display: input, print
 
-10. __build_class__, __debug__, __doc__, __import__, __loader__, __name__, __package__, __spec__
+10. Formating: format
 
-11. Exception, Warning
+11. __build_class__, __debug__, __doc__, __import__, __loader__, __name__, __package__, __spec__
 
-12. Errors and Warnings:
+12. Exception, Warning
+
+13. Errors and Warnings:
 	- ArithmeticError, AssertionError, AttributeError
 	- BaseException, BlockingIOError, BrokenPipeError, BufferError, BytesWarning
 	- ChildProcessError, ConnectionAbortedError, ConnectionError, ConnectionRefusedError, ConnectionResetError
@@ -51,5 +53,7 @@ Builtins:
 	- ValueError
 	- ZeroDivisionError
 
+14. help
 
-, , 'exit', '', 'any', '', 'bin', '', 'breakpoint, 'callable', '', '', 'compile', '', 'copyright', 'credits', '', '', 'dir', 'divmod', '', 'eval', 'exec', '', '', '', 'format', '', '', 'globals', '', 'hash', 'help', '', '', '', '', '', '', 'iter', '', 'license', '', 'locals', 'map', '', 'memoryview', '', '', '', '', '', 'ord', '', 'property', 'quit','repr', 'set','', '', 'zip'
+, , 'exit', '', '', '', 'bin', '', 'breakpoint, 'callable', '', '', 'compile', '', 'copyright', 'credits', '', '', 'dir', 'divmod', '', 
+'eval, 'globals', '', 'hash', '' 'iter', '', 'license', '', 'locals', 'map', '', 'memoryview','property', 'quit','', 'set'
