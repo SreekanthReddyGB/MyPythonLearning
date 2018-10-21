@@ -29,30 +29,31 @@ Builtins:
 
 11. __build_class__, __debug__, __doc__, __import__, __loader__, __name__, __package__, __spec__
 
-12. Exception, Warning
+12. 
 
-13. Errors and Warnings:
+13. Errors:
+	- Exception
 	- ArithmeticError, AssertionError, AttributeError
-	- BaseException, BlockingIOError, BrokenPipeError, BufferError, BytesWarning
+	- BaseException, BlockingIOError, BrokenPipeError, BufferError
 	- ChildProcessError, ConnectionAbortedError, ConnectionError, ConnectionRefusedError, ConnectionResetError
-	- DeprecationWarning
 	- EOFError, Ellipsis, EnvironmentError
-	- FileExistsError, FileNotFoundError, FloatingPointError, FutureWarning
+	- FileExistsError, FileNotFoundError, FloatingPointError
 	- GeneratorExit
-	- IOError, ImportError, ImportWarning, IndentationError, IndexError, InterruptedError, IsADirectoryError
+	- IOError, ImportError, IndentationError, IndexError, InterruptedError, IsADirectoryError
 	- KeyError, KeyboardInterrupt
 	- LookupError,
 	- MemoryError, ModuleNotFoundError
 	- NameError, NotADirectoryError, NotImplemented, NotImplementedError
 	- OSError, OverflowError
-	- PendingDeprecationWarning, PermissionError, ProcessLookupError
-	- RecursionError, ReferenceError, ResourceWarning, RuntimeError, RuntimeWarning
-	- StopAsyncIteration, StopIteration, SyntaxError, SyntaxWarning, SystemError, SystemExit
+	- PermissionError, ProcessLookupError
+	- RecursionError, ReferenceError, RuntimeError
+	- StopAsyncIteration, StopIteration, SyntaxError, SystemError, SystemExit
 	- TabError, TimeoutError, TypeError
-	- UnboundLocalError, UnicodeDecodeError, UnicodeEncodeError, UnicodeError, UnicodeTranslateError, UnicodeWarning, UserWarning
+	- UnboundLocalError, UnicodeDecodeError, UnicodeEncodeError, UnicodeError, UnicodeTranslateError
 	- ValueError
 	- ZeroDivisionError
 
+14. Warnings: Warning, ImportWarning, BytesWarning, FutureWarning, UnicodeWarning, UserWarning, SyntaxWarning, PendingDeprecationWarning, ResourceWarning, RuntimeWarning, DeprecationWarning
 14. help
 
 , , 'exit', '', '', '', 'bin', '', 'breakpoint, 'callable', '', '', 'compile', '', 'copyright', 'credits', '', '', 'dir', 'divmod', '', 
