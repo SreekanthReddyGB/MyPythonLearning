@@ -1,0 +1,9 @@
+Numpy:
+
+Inspecting array:
+1. shape
+2. ndim
+3. dtype
+4. itemsize: datatype size
+5. size: No of elements in array
+6. astype({type}): Convert array type to another type

@@ -77,4 +77,6 @@ If I want to use json.loads(), I would do print(json.loads(sys.stdin.read())) in
 --------------------------------------------------------------------------------
 Problem statement:
 Fetch flight timing from web and vary the price of flight ticket.
+(Helper Page: https://uk.flightaware.com/live/)
+
 Convert hardcopy image to softcopy
