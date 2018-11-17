@@ -1,0 +1,47 @@
+All, Any, max, min, sum, len, 
+None,
+
+Efficiency: 70:30 
+
+
+Any, All:
+a=[True,True,True]
+any(a) // True
+all(a) // True
+
+a.append(False)
+any(a) // True
+all(a) // False
+
+
+i.e.; 
+Any:
+Return True if bool(x) is True for any x in the iterable.
+If the iterable is empty, return False.
+
+All:
+Return True if bool(x) is True for all values x in the iterable.
+If the iterable is empty, return True.
+--------------------------------------------------------------------------------
+
+max, min, sum, len:
+max(a) // True
+min(a) // False
+sum(a) // 3
+len(a) // 4
+--------------------------------------------------------------------------------
+
+Sorted:
+a=['c', 'a', 'd']
+sorted(a) // ['a', 'c', 'd']
+
+Sorted: 
+Return a new list containing all items from the iterable in ascending order.
+--------------------------------------------------------------------------------
+
+
+Mean, Mode, Median
+Variance, SD, Range
+
+Arithematic mean
+

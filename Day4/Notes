@@ -1,0 +1,80 @@
+1. File Handler:
+
+
+--------------------------------------------------------------------------------
+
+2. JSON
+
+Q1. Difference between dump() and dumps()? 
+dumps = dump string
+If you want to dump the JSON into a file/socket or whatever, then you should go for dump(). If you only need it as a string (for printing, parsing or whatever) then use dumps() (dump string
+
+Q2. Difference between load() and loads()? 
+load can deserialize a file itself i.e. it accepts file object,
+
+with open("json_data.json", "r") as content:
+  print(json.load(content))
+
+will output,
+
+{u'event': {u'id': u'5206c7e2-da67-42da-9341-6ea403c632c7', u'name': u'Sufiyan Ghori'}}
+because content is of type file i.e, <type 'file'>
+
+If i use json.loads instead,
+
+with open("json_data.json", "r") as content:
+  print(json.loads(content))
+I would get this error:
+
+TypeError: expected string or buffer
+
+json.loads()
+
+json.loads() deserailize string.
+
+using content.read() with json.loads() return content of the file,
+
+with open("json_data.json", "r") as content:
+  print(json.loads(content.read()))
+Output,
+
+{u'event': {u'id': u'5206c7e2-da67-42da-9341-6ea403c632c7', u'name': u'Sufiyan Ghori'}}
+That's because type of content.read() is string, i.e. <type 'str'>
+
+If I use json.load() with content.read() I get error,
+
+with open("json_data.json", "r") as content:
+  print(json.load(content.read()))
+Gives,
+
+AttributeError: 'str' object has no attribute 'read'
+
+So, now you know json.load deserialze file and json.loads deserialize a string.
+
+Another example,
+
+sys.stdin return file object, so if i do print(json.load(sys.stdin)), I will get actual json data,
+
+cat json_data.json | ./test.py
+
+{u'event': {u'id': u'5206c7e2-da67-42da-9341-6ea403c632c7', u'name': u'Sufiyan Ghori'}}
+If I want to use json.loads(), I would do print(json.loads(sys.stdin.read())) instead.
+
+
+--------------------------------------------------------------------------------
+
+3. Web scraping and web crawling:
+- Parsing web data using Beautiful soup
+- pip install beautifulsoup4
+- pip install lxml
+- Example page: https://pythonprogramming.net/parsememcparseface/
+
+--------------------------------------------------------------------------------
+
+4. Numpy:
+
+
+--------------------------------------------------------------------------------
+Problem statement:
+Fetch flight timing from web and vary the price of flight ticket.
+Convert hardcopy image to softcopy

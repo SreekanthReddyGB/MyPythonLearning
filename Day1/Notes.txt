@@ -7,19 +7,19 @@ import math -> math.sqrt(2.3)
 
 
 Builtins:
-1. DataTypes: bool, int, float, complex, str, tuple, list, dict, ### bytes, id, object,  bytearray ###
+1. DataTypes: None, bool, int, float, complex, str, tuple, list, dict, ### bytes, id, object,  bytearray ###
 
-2. DataTypes Values: False, True, None, hex, oct
+2. DataTypes Values: False, True, hex, oct
 
 3. DataType Def: vars, type, chr, ord 
 
 4. Math and Numbers: abs, round, pow, range
 
-5. List: all, any, enumerate, zip, filter, next, sorted, max, min, sum, len
+5. List: all, any, enumerate, zip, filter, sorted, max, min, sum, len
 
 6. String: ascii, len, reversed, slice, repr
 
-7. File: open, 
+7. File: open, next
 
 8. Class: super, staticmethod, classmethod, getattr, setattr, delattr, isinstance, issubclass, frozenset, hasattr
 
